@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start</title>
+  <style>
+    :root {
+      --bg: #f4f6f9;
+      --card: #ffffff;
+      --text: #1a1d20;
+      --subtext: #6c757d;
+      --border: #e2e8f0;
+      --shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1115;
+        --card: #1a1d24;
+        --text: #f1f5f9;
+        --subtext: #94a3b8;
+        --border: #2a2f3a;
+        --shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+      }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 28px 18px 48px;
+    }
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0 0 24px 4px;
+      letter-spacing: -0.02em;
+    }
+    .category {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--subtext);
+      margin: 24px 0 10px 4px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: var(--card);
+      color: var(--text);
+      text-decoration: none;
+      padding: 13px 14px;
+      border-radius: 14px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      transition: transform 0.1s ease;
+      overflow: hidden;
+    }
+    a:active {
+      transform: scale(0.97);
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+    span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bookmarks</h1>
+
+  <!-- CATEGORY 1 -->
+  <div class="category">Daily</div>
+  <div class="grid">
+    <a href="https://google.com">
+      <img src="https://google.com/s2/favicons?domain=google.com&sz=64" alt="">
+      <span>Google</span>
+    </a>
+    <a href="https://google.com">
+      <img src="https://google.com/s2/favicons?domain=mail.google.com&sz=64" alt="">
+      <span>Gmail</span>
+    </a>
+    <a href="https://weather.com">
+      <img src="https://google.com/s2/favicons?domain=weather.com&sz=64" alt="">
+      <span>Weather</span>
+    </a>
+    <a href="https://google.com">
+      <img src="https://google.com/s2/favicons?domain=news.google.com&sz=64" alt="">
+      <span>News</span>
+    </a>
+  </div>
+
+  <!-- CATEGORY 2 -->
+  <div class="category">Reading & Media</div>
+  <div class="grid">
+    <a href="https://youtube.com">
+      <img src="https://google.com/s2/favicons?domain=youtube.com&sz=64" alt="">
+      <span>YouTube</span>
+    </a>
+    <a href="https://reddit.com">
+      <img src="https://google.com/s2/favicons?domain=reddit.com&sz=64" alt="">
+      <span>Reddit</span>
+    </a>
+  </div>
+
+</body>
+</html>
