@@ -53,11 +53,11 @@
     a {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 11px;
       background-color: var(--card);
       color: var(--text);
       text-decoration: none;
-      padding: 13px 14px;
+      padding: 12px 14px;
       border-radius: 14px;
       font-size: 0.95rem;
       font-weight: 500;
@@ -69,13 +69,19 @@
     a:active {
       transform: scale(0.97);
     }
-    img {
-      width: 20px;
-      height: 20px;
-      border-radius: 4px;
+    .badge {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: #ffffff;
       flex-shrink: 0;
     }
-    span {
+    .label {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -90,16 +96,16 @@
   <div class="category">Finance &amp; Reading</div>
   <div class="grid">
     <a href="https://regions.com">
-      <img src="https://duckduckgo.com" alt="">
-      <span>Regions Bank</span>
+      <div class="badge" style="background:#52ae30;">R</div>
+      <span class="label">Regions Bank</span>
     </a>
     <a href="https://libbyapp.com">
-      <img src="https://duckduckgo.com" alt="">
-      <span>Libby (JCLC)</span>
+      <div class="badge" style="background:#a61c46;">L</div>
+      <span class="label">Libby (JCLC)</span>
     </a>
     <a href="https://kobo.com">
-      <img src="https://duckduckgo.com" alt="">
-      <span>Kobo</span>
+      <div class="badge" style="background:#bf0000;">K</div>
+      <span class="label">Kobo</span>
     </a>
   </div>
 
@@ -107,28 +113,28 @@
   <div class="category">Media &amp; News</div>
   <div class="grid">
     <a href="https://youtube.com">
-      <img src="https://duckduckgo.com" alt="">
-      <span>YouTube</span>
+      <div class="badge" style="background:#ff0000;">▶</div>
+      <span class="label">YouTube</span>
     </a>
     <a href="https://youtube.com">
-      <img src="https://duckduckgo.com" alt="">
-      <span>YT Music</span>
+      <div class="badge" style="background:#e62117;">♫</div>
+      <span class="label">YT Music</span>
     </a>
     <a href="https://pbs.org">
-      <img src="https://duckduckgo.com" alt="">
-      <span>PBS Live</span>
+      <div class="badge" style="background:#1c4b82;">PBS</div>
+      <span class="label">PBS Live</span>
     </a>
     <a href="https://npr.org">
-      <img src="https://duckduckgo.com" alt="">
-      <span>NPR</span>
+      <div class="badge" style="background:#d62021;">npr</div>
+      <span class="label">NPR</span>
     </a>
     <a href="https://chromeunboxed.com">
-      <img src="https://duckduckgo.com" alt="">
-      <span>Chrome Unboxed</span>
+      <div class="badge" style="background:#1a73e8;">CU</div>
+      <span class="label">Chrome Unboxed</span>
     </a>
     <a href="https://pinterest.com">
-      <img src="https://duckduckgo.com" alt="">
-      <span>Pinterest</span>
+      <div class="badge" style="background:#e60023;">P</div>
+      <span class="label">Pinterest</span>
     </a>
   </div>
 
@@ -136,32 +142,32 @@
   <div class="category">Shopping</div>
   <div class="grid">
     <a href="https://amazon.com">
-      <img src="https://duckduckgo.com" alt="">
-      <span>Amazon</span>
+      <div class="badge" style="background:#ff9900;">a</div>
+      <span class="label">Amazon</span>
     </a>
     <a href="https://target.com">
-      <img src="https://duckduckgo.com" alt="">
-      <span>Target</span>
+      <div class="badge" style="background:#cc0000;">◎</div>
+      <span class="label">Target</span>
     </a>
     <a href="https://walmart.com">
-      <img src="https://duckduckgo.com" alt="">
-      <span>Walmart</span>
+      <div class="badge" style="background:#0071dc;">✳</div>
+      <span class="label">Walmart</span>
     </a>
     <a href="https://samsclub.com">
-      <img src="https://duckduckgo.com" alt="">
-      <span>Sam's Club</span>
+      <div class="badge" style="background:#0067a0;">S</div>
+      <span class="label">Sam's Club</span>
     </a>
     <a href="https://bestbuy.com">
-      <img src="https://duckduckgo.com" alt="">
-      <span>Best Buy</span>
+      <div class="badge" style="background:#0046be;">BB</div>
+      <span class="label">Best Buy</span>
     </a>
     <a href="https://apple.com">
-      <img src="https://duckduckgo.com" alt="">
-      <span>Apple Education</span>
+      <div class="badge" style="background:#555555;"></div>
+      <span class="label">Apple Education</span>
     </a>
     <a href="https://wayfair.com">
-      <img src="https://duckduckgo.com" alt="">
-      <span>Wayfair</span>
+      <div class="badge" style="background:#7b189f;">W</div>
+      <span class="label">Wayfair</span>
     </a>
   </div>
 
