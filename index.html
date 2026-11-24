@@ -34,7 +34,7 @@
       box-sizing: border-box;
     }
 
-    /* GEMINI BAR & SHORTCUT */
+    /* AI SEARCH BAR & GEMINI SHORTCUT */
     .gemini-row {
       display: flex;
       align-items: center;
@@ -166,11 +166,12 @@
 </head>
 <body>
 
-  <!-- GEMINI SEARCH & HISTORY LINK -->
+  <!-- AI SEARCH & GEMINI HISTORY LINK -->
   <div class="gemini-row">
-    <form class="gemini-form" action="https://gemini.google.com" method="get">
-      <input class="gemini-input" type="text" name="q" placeholder="Ask Gemini..." autocomplete="off">
-      <button class="gemini-submit" type="submit" aria-label="Ask Gemini">➤</button>
+    <form class="gemini-form" action="https://google.com" method="get">
+      <input type="hidden" name="udm" value="50">
+      <input class="gemini-input" type="text" name="q" placeholder="Ask Gemini AI..." autocomplete="off">
+      <button class="gemini-submit" type="submit" aria-label="Ask AI">➤</button>
     </form>
     <a class="gemini-home" href="https://gemini.google.com">
       <span>✦</span>
@@ -216,11 +217,11 @@
   <!-- MEDIA & NEWS -->
   <div class="category">Media &amp; News</div>
   <div class="grid">
-    <a href="https://youtube.com">
+    <a href="https://www.youtube.com/">
       <div class="badge" style="background:#ff0000;">▶</div>
       <span class="label">YouTube</span>
     </a>
-    <a href="https://youtube.com">
+    <a href="https://music.youtube.com/">
       <div class="badge" style="background:#e62117;">♫</div>
       <span class="label">YT Music</span>
     </a>
