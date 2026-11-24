@@ -8,6 +8,7 @@
     :root {
       --card: rgba(255, 255, 255, 0.78);
       --text: #111827;
+      --subtext: #4b5563;
       --header-text: #ffffff;
       --border: rgba(255, 255, 255, 0.45);
       --shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
@@ -16,6 +17,7 @@
       :root {
         --card: rgba(20, 24, 32, 0.75);
         --text: #f8fafc;
+        --subtext: #94a3b8;
         --header-text: #ffffff;
         --border: rgba(255, 255, 255, 0.14);
         --shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
@@ -28,15 +30,84 @@
       min-height: 100vh;
       max-width: 480px;
       margin: 0 auto;
-      padding: 28px 18px 48px;
+      padding: 24px 18px 48px;
       box-sizing: border-box;
     }
+
+    /* GEMINI BAR & SHORTCUT */
+    .gemini-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+    .gemini-form {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      background-color: var(--card);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      border-radius: 16px;
+      padding: 4px 6px 4px 14px;
+    }
+    .gemini-input {
+      flex: 1;
+      border: none;
+      background: transparent;
+      color: var(--text);
+      font-size: 0.95rem;
+      outline: none;
+      width: 100%;
+      padding: 8px 0;
+    }
+    .gemini-input::placeholder {
+      color: var(--subtext);
+    }
+    .gemini-submit {
+      background: linear-gradient(135deg, #4285f4, #9b72cb);
+      color: #ffffff;
+      border: none;
+      border-radius: 11px;
+      width: 34px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .gemini-submit:active {
+      transform: scale(0.95);
+    }
+    .gemini-home {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(135deg, #1a73e8, #8e24aa);
+      color: #ffffff !important;
+      text-decoration: none;
+      padding: 12px 14px;
+      border-radius: 16px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      box-shadow: var(--shadow);
+      flex-shrink: 0;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    .gemini-home:active {
+      transform: scale(0.96);
+    }
+
     h1 {
       font-size: 1.6rem;
       font-weight: 700;
       color: var(--header-text);
       text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
-      margin: 0 0 24px 4px;
+      margin: 0 0 20px 4px;
       letter-spacing: -0.02em;
     }
     .category {
@@ -53,7 +124,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 10px;
     }
-    a {
+    .grid a {
       display: flex;
       align-items: center;
       gap: 11px;
@@ -71,7 +142,7 @@
       transition: transform 0.1s ease;
       overflow: hidden;
     }
-    a:active {
+    .grid a:active {
       transform: scale(0.97);
     }
     .badge {
@@ -94,6 +165,18 @@
   </style>
 </head>
 <body>
+
+  <!-- GEMINI SEARCH & HISTORY LINK -->
+  <div class="gemini-row">
+    <form class="gemini-form" action="https://gemini.google.com" method="get">
+      <input class="gemini-input" type="text" name="q" placeholder="Ask Gemini..." autocomplete="off">
+      <button class="gemini-submit" type="submit" aria-label="Ask Gemini">➤</button>
+    </form>
+    <a class="gemini-home" href="https://gemini.google.com">
+      <span>✦</span>
+      <span>Gemini</span>
+    </a>
+  </div>
 
   <h1>Bookmarks</h1>
 
